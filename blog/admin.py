@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import Post, Comment
+from .models import Post, Comment, Tag
 
 from django_summernote.admin import SummernoteModelAdmin
-
+admin.site.register(Tag)
 class PostAdmin(SummernoteModelAdmin):
     list_display = ('title', 'slug', 'status', 'created_on')
     list_filter = ('status', 'created_on')
@@ -24,3 +24,4 @@ class CommentAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Post, PostAdmin)
+

@@ -18,3 +18,4 @@ whitenoise==5.2.0
 wrapt==1.12.1
 django-heroku
 python-decouple==3.3
+Pillow==8.0.1
